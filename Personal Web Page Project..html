@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobilestyle.css" media="screen and (max-width: 767px)">
+    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <!-- Toggle button for mobile navigation -->
+        <div class="toggle"></div>
+        <!-- Menu items -->
+        <ul class="menu">
+            <li class="active"><a href="#main">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+        </ul>
+        <!-- LSPU LOGO -->
+        <img src="logo.png" alt="Logo" width="95" height="95" style="margin-left: 50px; margin-top: -70px;">
+    </nav>
+
+    <!-- Main Section -->
+    <section id="main">
+        <div class="name">
+            <!-- Greeting and name -->
+            <p>Hello</p>
+            <!-- Introduction and Short Bio -->
+            <h1>I'm <span style="color: #17d1ac;">Russel</span> Piguing</h1>
+            <p class="details">Hi there! 👋 I'm a BS Information Technology student at Laguna State Polytechnic University and currently reside in Barangay Masiit Calauan,Laguna, passionate about gaming, anime, and manga. Alongside these interests, I have a deep love for coding and technology. Whether I'm diving into virtual worlds, getting lost in captivating stories, or writing lines of code, I'm constantly pushing the boundaries of creativity and innovation. My goal is to blend these passions into impactful projects that make a difference.</p>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" style="width: 1351px; height: 919px; display: flex; justify-content: flex-end; align-items: center; padding-right: 100px;">
+        <div class="about-text" style="text-align: center;"> 
+            <div class="text-content" style="position: relative; top: -100px;"> 
+                  <!-- Section title and heading -->
+                <h1>Education</h1>
+                <h2>Background</h2>
+                   <!-- List of education history -->
+                <ul>
+                    <li>Refiner's Christian School (Elementary)</li>
+                    <li>Refiner's Christian School (High School)</li>
+                    <li>Refiner's Christian School (JHS)</li>
+                    <li>Refiner's Christian School (SHS)</li>
+                    <li>BS Information Technology 2nd Year (Laguna State Polytechnic University)</li>
+                    <li>Expected to Graduate in 2026</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="s-heading">
+             <!-- Section title and heading -->
+            <h1>Skills</h1>
+              <!-- Description of skills section -->
+            <p>Below are some of my key skills and competencies. I have experience and proficiency in various areas, including coding, programming languages, editing, English language proficiency, and Microsoft Office applications. Each skill is represented with a progress bar indicating my level of proficiency`</p>
+        </div>
+           <!-- Container for skill boxes -->
+        <div class="b-container">
+             <!-- Progress bar indicating proficiency level -->
+            <div class="s-box">
+                <h2>Web Development</h2>
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+            <div class="s-box">
+                <h2>Programming Languages</h2>
+                <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+            </div>
+        </div>
+        <div class="b-container">
+            <div class="s-box">
+                <h2>Editing</h2>
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+            <div class="s-box">
+                <h2>English</h2>
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+        </div>
+        <div class="b-container">
+            <div class="s-box">
+                <h2>Microsoft Office</h2>
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h1 class="p-heading">Projects:</h1>
+        <div class="p-container">
+               <!-- Individual project box -->
+            <div class="p-box">
+                     <!-- Image of the project -->
+                <img src="proj2.png" alt="Project 1" style="width: 100%; height: auto;">
+                 <!-- Overlay text for project details -->
+                <div class="overlay-text">
+                    <h1>Starfire Strike</h1>
+                    <p>A C# game called Starfire Strike, a wargame simulating combat in space at sub-light speed. The game involves maneuvering ships into optimum range for their own weapon systems to destroy enemy ships.</p>
+                    <p><strong>My Role:</strong> I am the developer of the game.</p>
+                </div>
+            </div>
+            <div class="p-box">
+                <img src="proj3.png" alt="Project 2" style="width: 100%; height: auto;">
+                 <!-- Overlay text for project details -->
+                <div class="overlay-text">
+                    <h1>Blockade Breaker </h1>
+                    <p>Blockade Breaker is an exciting arcade game filled with various vibrant colors and obstacles. This game has a goal to use a paddle to bounce a ball and break through layers of bricks to collect points 2</p>
+                    <p><strong>My Role:</strong> I am the developer of the game.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" style="background-color: #f9f9f9; padding: 60px 20px;">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+             <!-- Section title and heading -->
+            <h1 style="font-size: 2.5rem; color: #292929; margin-bottom: 20px;">Contact Me</h1>
+              <!-- Description of contact section -->
+            <p style="font-size: 1.1rem; color: #6c707c; margin-bottom: 40px;">Feel free to reach out to me via email or through my professional social media accounts.</p>
+            <div style="margin-bottom: 40px;">
+                 <!-- Email addresses and LinkedIn profile -->
+                <p style="font-size: 1.2rem; color: #292929; margin-bottom: 10px;">Email: <a href="mailto:russelpiguing20@gmail.com" style="color: #17d1ac;">russelpiguing20@gmail.com</a></p>
+                <p style="font-size: 1.2rem; color: #292929; margin-bottom: 10px;">University Email: <a href="https://www.lspuonline.com/dashboard" style="color: #17d1ac;">0322-1940@lspu.edu.ph</a></p>
+                <p style="font-size: 1.2rem; color: #292929; margin-bottom: 10px;">LinkedIn: <a href="https://www.linkedin.com/in/russel-piguing-9b20452b7/" target="_blank" style="color: #17d1ac;">LinkedIn</a></p>
+            </div>
+              <!-- Contact form -->
+            <div style="background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);">
+                <h2 style="font-size: 2rem; color: #292929; margin-bottom: 20px;">Send me a Message</h2>
+                  <!-- Form for sending message -->
+                <form action="your_server_side_script.php" method="POST" style="text-align: left;">
+                    <div style="margin-bottom: 20px;">
+                        <label for="name" style="font-size: 1.1rem; color: #292929;">Name:</label>
+                        <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="email" style="font-size: 1.1rem; color: #292929;">Email:</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="message" style="font-size: 1.1rem; color: #292929;">Message:</label>
+                        <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+                    </div>
+                    <button type="submit" style="background-color: #17d1ac; color: #ffffff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

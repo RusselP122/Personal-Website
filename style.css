@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #4f524f;
+    --blue: #31326f;
+    --light-blue: #04B4E0;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --color-grey: #eee;
+    --very-dark: #363836;
+    --orange: #ffb640;
+}
+
+/* Reset styles to ensure consistent rendering across browsers */
+/* Setting margins and padding to 0 for various elements */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles for the body */
+body {
+    background-color: #161616;
+    font-family: calibri;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu li {
+    margin-top: 50px; /* Adjust margin-top to move menu items down */
+}
+
+.menu li a {
+    padding: 10px 15px;
+    color: #6c707c;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #292929;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+/* Main Section Styles */
+#main {
+    padding: 30px 50px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url("unif2.png");
+    background-color: #edf1fd;
+    background-size: 600px;
+    background-position: calc(100% - 90px) 10px, calc(100% - 90px) calc(100% - 10px);
+    background-repeat: no-repeat;
+}
+
+/* Styles for the name section */
+.name {
+    width: 500px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-20%, -50%);
+}
+
+/* Styling for various text elements within the name section */
+.name p:nth-child(1), .name .details {
+    color: #6c707c;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the name */
+.name h1 {
+    font-size: 50px; /* Increased font size */
+    margin: 0;
+    letter-spacing: 3px;
+    color: #292929;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; /* Change font family */
+}
+
+/* Styling for the details section */
+.name .details {
+    font-family: Arial, sans-serif; /* System font stack */
+    font-size: 18px; /* Adjust font size */
+}
+
+/* Styling for the about section */
+.about-text ul {
+    font-family: Arial, sans-serif; /* Change font family */
+    color: #fff; /* Set font color to white */
+}
+
+.about-text li {
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Styling for the about section */
+#about {
+    margin-top: 50px;
+    text-align: center; /* Center the content */
+}
+
+/* Styling for the about-text section */
+.about-text {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for icons in the about section */
+.about-text i {
+    font-size: 36px; /* Adjust icon size */
+    color: #f1ff2e; /* Use the primary color */
+    margin-right: 20px; /* Adjust spacing */
+}
+
+/* Styling for text content in the about section */
+.text-content {
+    text-align: left; /* Align text to the left */
+}
+
+/* Styling for headings in the about section */
+.about-text h1 {
+    margin-left: 475px;
+    color: #17d1ac; /* green */
+    font-size: 54px; /* Increase font size */
+    margin-bottom: 10px; /* Adjust spacing */
+}
+
+.about-text h2 {
+    color: #ffffff; /* white */
+    margin-left: 475px;
+    font-size: 34px; /* Increase font size */
+    margin-bottom: 15px; /* Adjust spacing */
+}
+
+/* Styling for list items in the about section */
+.about-text ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.about-text ul li {
+    position: relative; /* Set position */
+    margin-left: 475px; /* Add left padding */ 
+    padding-left: 25px; 
+    padding-bottom: 15px; /* Add bottom padding */
+    color: #ffffff; /* white */
+    font-size: 34px; /* Increase font size */
+}
+
+.about-text ul li::before {
+    content: ""; /* Add content */
+    display: block; /* Change to block level */
+    position: absolute; /* Set position */
+    width: 7px; /* Set width */
+    height: 7px; /* Set heigh  */
+    border: 3px solid #ffffff; /* Set border */ /* white */
+    background: #f39c12; /* orange */
+    border-radius: 50%; /* Make border radius */ 
+    left: 3px; /* Set left position */
+    top: 15px; /* Set Top position */
+    z-index: 1; /* Set z-index */ 
+}
+
+.about-text ul li::after {
+    content: ""; /* Add content */ 
+    display: block; /* Change to block level */
+    position: absolute; /* Set position */
+    width: 3px; /* Set width */
+    height: 100%; /* Set height */ 
+    background: #ffffff; /* white */
+    left: 5px; /* Set left position */
+    top: 0; /* Set top position */
+}
+
+.about-text ul li:last-of-type {
+    padding-bottom: 3px; /* Add bottom padding */
+} 
+
+.about-text ul li:last-of-type::after {
+    border-radius: 1.5px; /* Add border radius */
+}
+
+.about-text ul li:hover::before {
+    animation: circle 1.2s infinite;  /* Add animation */
+}
+
+.about-text ul li:hover span {
+    color: #ffff00; /* yellow */ 
+}
+
+.about-text ul li span {
+    transition-duration: 0.3s; /* Set transition duration */
+    opacity: 0.7;  /* Set opacity */
+    display: block;  /* Change to block level */
+    font-size: 18px; /* Increase font size */
+}
+
+@keyframes circle {
+    from {
+        box-shadow: 0 0 0 0px #ffff00; /* yellow */
+    }
+    to {
+        box-shadow: 0 0 0 6px rgba(255, 255, 255, 0); /* Set box shadow */
+    }
+}
+
+/* Services Section */
+#services {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    background-color: #f9f9f9; /* Adjust background color */
+}
+
+.s-heading h1 {
+    color: #292929;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.s-heading p {
+    color: #6c707c;
+    font-size: 1rem;
+    text-align: center;
+    max-width: 600px; /* Adjust max-width as needed */
+    margin-bottom: 40px; /* Increase or decrease margin bottom for spacing */
+}
+
+.b-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap; /* Allow skill boxes to wrap */
+}
+
+/* Skill Box Styling */
+.s-box {
+    background-color: #fff;
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Skill Name Styling */
+.s-box h2 {
+    font-size: 1.5rem;
+    color: #292929;
+    margin-bottom: 10px;
+}
+
+/* Progress bar styles */
+.progress-bar {
+    background-color: #17d1ac;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.progress {
+    width: 80%; /* Adjust width based on skill level */
+    height: 100%;
+    background-color: #17d1ac; /* Adjust color based on skill level */
+    border-radius: 10px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 2% 20px 2%;
+}
+
+.p-heading {
+    font-family: calibri;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    padding: 10px 20px;
+    background-color: #292929;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.p-box {
+    background-color: #1f1f1f;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-left: 50px; /* Adjust the value as needed */
+    padding: 20px; /* Add padding to all boxes */
+}
+
+.p-box:first-child {
+    padding-right: 0; /* Remove padding on the right for the first box */
+}
+
+.p-container {
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around; /* Adjust this property */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Remove the overlay-text styles */
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(23, 209, 172, 0.80);
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.p-box:hover .overlay-text {
+    opacity: 1;
+}
+
+.description {
+    padding: 20px;
+}
+
+.description h1 {
+    font-size: 1.5rem; /* Adjust the font size for headings */
+    color: #17d1ac;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 1rem; /* Adjust the font size for paragraphs */
+    color: #292929;
+    margin-bottom: 10px;
+}
+
+.description strong {
+    font-weight: bold;
+}
